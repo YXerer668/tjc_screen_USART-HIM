@@ -1,0 +1,50 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Local/reverse-engineering artifacts and generated builds.
+build_*/
+tmp_*/
+hmi_extract*/
+usart_hmi_layout_test/
+usart_hmi_rar_extract/
+reverse_usarthmi/
+github_refs/
+
+# Official/generated binary payloads. Keep these out of normal git history.
+*.tft
+*.TFT
+*.hmi
+*.HMI
+*.zi
+*.bin
+*.dll
+*.exe
+*.pdb
+*.rar
+*.zip
+
+# Local screenshots/captures.
+after_*.png
+desktop_capture_*.png
+foreground_window_capture.png
+menu_shezhi.png
+output_*_check.png
+seed_open_check.png
+usart_hmi_*.png
+usart_hmi_window_*.png
+
+# Keep the small vendored TFTTool source, but not its cache/example binaries.
+external/*
+!external/TFTTool/
+external/TFTTool/__pycache__/
+external/TFTTool/Example/
+
+# Build products from helper tools.
+tools/**/bin/
+tools/**/obj/

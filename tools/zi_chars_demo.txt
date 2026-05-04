@@ -1,0 +1,10 @@
+USART HMI MENU
+command-line generated page
+PLAY
+SETTINGS
+RECORD
+SYSTEM
+开始
+设置
+录制
+系统

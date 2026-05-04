@@ -1,0 +1,13 @@
+[project]
+name = "usarthmi"
+version = "0.1.0"
+description = "USART HMI CLI for TJC/USART HMI displays"
+requires-python = ">=3.10"
+dependencies = [
+  "Pillow>=10.0",
+  "PyYAML>=6.0",
+  "pyserial>=3.5",
+]
+
+[project.scripts]
+usarthmi = "usarthmi.cli:main"

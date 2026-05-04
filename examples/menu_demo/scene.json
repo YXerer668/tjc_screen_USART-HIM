@@ -1,0 +1,156 @@
+{
+  "project": {
+    "name": "menu-demo",
+    "default_page": "page0"
+  },
+  "canvas": {
+    "width": 800,
+    "height": 480,
+    "background_color": 65535
+  },
+  "assets": {
+    "play": {
+      "id": "play",
+      "source": "./assets/play.png",
+      "normal": "./assets/play.png",
+      "pressed": "./assets/play_pressed.png",
+      "disabled": "./assets/play_disabled.png"
+    },
+    "settings": {
+      "id": "settings",
+      "source": "./assets/settings.png",
+      "normal": "./assets/settings.png",
+      "pressed": "./assets/settings_pressed.png",
+      "disabled": "./assets/settings_disabled.png"
+    },
+    "record": {
+      "id": "record",
+      "source": "./assets/record.png",
+      "normal": "./assets/record.png",
+      "pressed": "./assets/record_pressed.png",
+      "disabled": "./assets/record_disabled.png"
+    },
+    "system": {
+      "id": "system",
+      "source": "./assets/system.png",
+      "normal": "./assets/system.png",
+      "pressed": "./assets/system_pressed.png",
+      "disabled": "./assets/system_disabled.png"
+    }
+  },
+  "pages": [
+    {
+      "id": "page0",
+      "layout": {
+        "type": "absolute"
+      },
+      "widgets": [
+        {
+          "id": "title",
+          "type": "text",
+          "x": 24,
+          "y": 18,
+          "w": 320,
+          "h": 42,
+          "text": "USART HMI MENU",
+          "style": {
+            "font_id": 0,
+            "background_color": 65535,
+            "foreground_color": 0
+          }
+        },
+        {
+          "id": "subtitle",
+          "type": "text",
+          "x": 24,
+          "y": 64,
+          "w": 360,
+          "h": 28,
+          "text": "command-line generated page",
+          "style": {
+            "font_id": 0,
+            "background_color": 65535,
+            "foreground_color": 33808
+          }
+        },
+        {
+          "id": "value0",
+          "type": "number",
+          "x": 612,
+          "y": 24,
+          "w": 120,
+          "h": 44,
+          "value": 92,
+          "style": {
+            "background_color": 65535,
+            "foreground_color": 63488
+          }
+        },
+        {
+          "id": "btn_play",
+          "type": "button",
+          "x": 40,
+          "y": 152,
+          "w": 160,
+          "h": 96,
+          "text": "PLAY",
+          "resources": {
+            "asset": "play"
+          },
+          "style": {
+            "background_color": 65535,
+            "foreground_color": 0
+          }
+        },
+        {
+          "id": "btn_settings",
+          "type": "button",
+          "x": 228,
+          "y": 152,
+          "w": 160,
+          "h": 96,
+          "text": "SETTINGS",
+          "resources": {
+            "asset": "settings"
+          },
+          "style": {
+            "background_color": 65535,
+            "foreground_color": 0
+          }
+        },
+        {
+          "id": "btn_record",
+          "type": "button",
+          "x": 416,
+          "y": 152,
+          "w": 160,
+          "h": 96,
+          "text": "RECORD",
+          "resources": {
+            "asset": "record"
+          },
+          "style": {
+            "background_color": 65535,
+            "foreground_color": 0
+          }
+        },
+        {
+          "id": "btn_system",
+          "type": "button",
+          "x": 604,
+          "y": 152,
+          "w": 160,
+          "h": 96,
+          "text": "SYSTEM",
+          "resources": {
+            "asset": "system"
+          },
+          "style": {
+            "background_color": 65535,
+            "foreground_color": 0
+          }
+        }
+      ]
+    }
+  ]
+}
